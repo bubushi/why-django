@@ -1,0 +1,14 @@
+Çfarë është Django dhe pse të shfrytëzohet Django?
+
+Django është kornizë zhvillimi për web, e cila mundëson zhvillim të shpejt të sajteve të sigurta dhe lehtë të menaxhueshme. Është dizajnuar dhe krijuar nga Lawrence Journal World në 2003 dhe është lëshuar në publik nën BSD licencimin në vitin 2005. Që nga 2005 deri më tani është shëndruar në një nga kornizat e zhvillimit më të avancuara për web. Filozofia e Djangos është filozofia e ashtuquajtur "me bateri të përfshirë", e cila nënkupton se gjdo gjë që nevojitet nga zhvilluesit në punën e tyre gjendët brenda dhe punon shumë mirë së bashku. Django mund të shfrytëzohet për zhvillimin e cfardo web aplikacioni, këtë e dëshmojnë sajtet e mëdha si Youtube, Instagram, Spotify, Openstack, Dropbox, Mozilla, Disqus, Pinterest e shumë të tjera. Edhepse për Django mund të thuhet se nuk ka pika te dobëta, ndër më të fortat janë gjithanshmëria, siguria, lehtësia në zgjërim, pastërtia në kodim, si dhe portativiteti. E të gjitha këto rrjedhin si produkt i shfrytëzimit të web api-ve si dhe te gjuhës programuese python.
+
+Kur flasim për sigurinë, Django është projektuar që të siguroj sajtin në mënyrë automatike. Disa nga mbrojtjet automatike që Django u jep zhvilluesve të cilët e shfrytezojn perfshin:
+Django ndihmon zhvilluesit që të mbrojnë shfrytezuesit e sajteve të tyre nga XSS (Cross Scripting Attack) sulmet, nëpermjet shfrytëzimit të Django Shablloneve. Edhe pse nuk shfrytëzohen shumë karaktere që janë të rrezikshme në Django shabllone, ajo nuk është e papërshkueshme. Kujdes të veqant duhet ti kushtohet etiketave shabllon si "is_safe", "safe" dhe "mark_safe". 
+Django mbron zhvilluesit nga CSRF (Cross Site Request Forgery) sulmet. Gjithësesi nëse shfrytezuesit e shfrytëzojn në menyrë adekuate. Poashtu vlen të cekët se mbrojtja ndaj CSRF sulmeve është e kufizuar nëse sajti ka subdomen jashtë kontrollit të tijë.
+Django ofron mbrojtje edhe ndaj SQL injection. Mbrojtja bazohet në parametrizimin e query-ve. SQL kodi i nje query përcaktohet vecmas nga parametrat e quer-it. Edhe pse siguria është e lartë, per shkak se Django lejon krijimin e queryve te pa perpunuar nga zhvillesit, atëherë duhet që shfrytëzuesit të kenë kujdes se si i krijojne ato.
+Django mbron nga Clickjacking nëpërmes X-Frame-Options middleware, e cila e pamundëson që sajti të pasqyrohet brenda një kornize, etj
+
+Django shfrytëzon variantin e dizajn modelit të kodimit MVC, të ashtuquajturin MTV. Analogjia, apo ndërlidhja e MTV me MVC mund të përshkruhët kësisoj:
+Modelit nga MVC i përgjigjët Modeli në MTV, Views/Pamjës në MVC i përgjigjët Template/Shablloni në MTV dhe Controller në MVC i pergjigjet View/Pamja ne MTV.
+
+Me fjalë të tjera Django është kornizë për zhvillim të web-it shumë profesionale dhe e lehtë për t’u përdorur, dhe si e tillë shfrytëzohet shumë nga zhvilluesit e web applikacioneve.
